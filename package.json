@@ -6,6 +6,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/aimi-component/aimi-banner-drawer"
+	},
   "scripts": {
     "build": "webpack --env.NODE_ENV=production",
     "dev": "webpack-dev-server"
