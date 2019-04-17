@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Bannerdrawer,{BannerPanel} from '../dist/bundle.js'
-import '../dist/aimibannerdrawer.css'
+import Bannerdrawer,{BannerPanel} from './index'
+import './aimibannerdrawer.scss'
 import './app.scss';
 
 class App extends React.Component{

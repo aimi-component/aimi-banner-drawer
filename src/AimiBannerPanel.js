@@ -42,7 +42,9 @@ class BannerPanel extends Component {
                 onMouseEnter={this.props.onMouseEnter}
                 className={classNames('aimi-drawer--panel', this.props.className)}>
                 <div className='aimi-drawer--mask'></div>
-                {this.props.children}
+                <div className='aimi-drawer--panel-content'>
+                    {this.props.children}
+                </div>
                 <div className="aimi-drawer--img" style={{ 'background': `url(${this.props.img}) center center` }}></div>
               </div>
 
