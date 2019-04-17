@@ -25,7 +25,7 @@ class App extends React.Component{
                             {this.state.data.map((item,index) => {
                                 return (
                                     <BannerPanel img={item.img}>
-                                        <p className="demo-panel-title">{item.title}</p>
+                                        <p className="demo-panel-title" style={{color: '#fff',padding:'5px 10px'}}>{item.title}</p>
                                     </BannerPanel>
                                 )
                             })}
