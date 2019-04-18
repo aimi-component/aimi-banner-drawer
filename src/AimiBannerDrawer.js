@@ -50,7 +50,7 @@ class Bannerdrawer extends Component {
     let Props = this.props;
     let Children = this.props.children.map((object,index) => {
         let classActive = classNames({'aimi-drawer--active':this.state.activeArray[index].active})
-        return React.cloneElement(object,{className:classActive,onMouseEnter:() => this.handleMouseEnter(index)})
+        return React.cloneElement(object,{key:`draw-${index}`,className:classActive,onMouseEnter:() => this.handleMouseEnter(index)})
     }) 
     return (
       <div className={`aimi-drawer aimi-drawer--fuild aimi-drawer--flex ${this.props.className}`}>
